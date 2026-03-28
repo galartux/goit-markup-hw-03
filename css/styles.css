@@ -7,13 +7,48 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 120px 0;
+}
+
 /* -----------------HEADER------------------ */
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -25,11 +60,24 @@ a {
   color: #4d5ae5;
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
 .header-logo .logo-part {
   color: #2e2f42;
 }
 
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .header-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -39,9 +87,18 @@ a {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -58,10 +115,13 @@ a {
 
 .hero {
   background: #2e2f42;
+  padding: 188px 0;
 }
 
 .hero-title {
-  /* font-weight: 700; */
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
   font-size: 56px;
   line-height: 1.07143;
   letter-spacing: 0.02em;
@@ -70,6 +130,10 @@ a {
 }
 
 .hero-button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 16px 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   font-weight: 500;
@@ -78,6 +142,7 @@ a {
   letter-spacing: 0.04em;
   color: #fff;
   cursor: pointer;
+  border: none;
 }
 
 .hero-button:hover,
@@ -88,12 +153,32 @@ a {
 /* ---------------------FEATURES------------------ */
 .features {
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .features-title {
 }
+
 .features-list {
+  display: flex;
+  gap: 24px;
 }
+
 .features-item {
+  width: calc((100% - 24px * 3) / 4);
 }
+
 .features-subtitle {
   font-weight: 500;
   font-size: 20px;
