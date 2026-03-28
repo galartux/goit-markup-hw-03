@@ -230,7 +230,7 @@ img {
 }
 
 .team-card {
-  padding: 32px 0;
+  padding: 32px 16px;
   text-align: center;
 }
 
@@ -279,8 +279,6 @@ img {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  width: 360px;
-  height: 120px;
 }
 .portfolio-team-subtitle {
   margin-bottom: 8px;
